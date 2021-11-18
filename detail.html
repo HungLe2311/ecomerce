@@ -6,15 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
+    <style>
+        .path a::before {
+            content: url(img/detail-muiten.svg);
+        }
+        
+        .path a:first-child::before {
+            content: '';
+        }
+    </style>
 </head>
 
 <body>
-    <form>
-        <input type="number" name="soluong" min="1">
-    </form>
-    <button type="button" onclick="alert('Added to Cart')">Add to Cart</button>
-    <p>SKU: 86423-AB</p>
-    <p>Category: <span style="color: #EB5757;">Jacket</span></p>
+    <section>
+        <nav class="path">
+            <a href="index.html">Home</a>
+            <a href="#">Jackets</a>
+            <a href="#">Julia</a>
+        </nav>
+        <form>
+            <input type="number" name="soluong" min="1">
+        </form>
+        <button type="button" onclick="alert('Added to Cart')">Add to Cart</button>
+        <p>SKU: 86423-AB</p>
+        <p>Category: <span style="color: #EB5757;">Jacket</span></p>
+    </section>
+
     <p>CONTENT AND CARE</p>
     <ul>
         <li>Nylon, Metallic, Spandex</li>
