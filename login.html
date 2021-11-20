@@ -6,10 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .create::after {
+            content: url(img/login-arrow.svg);
+        }
+    </style>
 </head>
 
 <body>
     <h1>Login</h1>
+    <a class="create" href="register.html">Create account </a>
     <form>
         <input type="email" id="email" name="email" placeholder="Email address*"> <br><br>
         <input type="password" name="pass" placeholder="Pasword*" pattern="[0-9]{4}"> <br><br>
