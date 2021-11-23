@@ -1,0 +1,20 @@
+a {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: rgb(58, 58, 250);
+    text-decoration: underline;
+}
+
+a:active {
+    color: green;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

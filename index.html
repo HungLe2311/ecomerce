@@ -7,24 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
-        a {
-            color: black;
-        }
-        
-        a:hover {
-            color: violet;
-        }
-        
-        a:active {
-            color: green;
-        }
-        
         .footer {
             background-color: grey;
         }
         
         #ins {
             color: #9B51E0;
+            text-decoration: underline;
         }
         
         .cart p {
@@ -50,14 +39,24 @@
          ::marker {
             content: '';
         }
+        
+        .middle img {
+            vertical-align: middle;
+        }
+        
+        .reven {
+            letter-spacing: 0.5em;
+            text-align: right;
+        }
     </style>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <img src="img/index-background.jpg" alt="banner">
         <nav>
-            <b>NORDIC CODER</b>
+            <a class="uppercase" href="index.html">Nordic Coder</a>
             <a href="#">New</a>
             <a href="listing.html">Shop</a>
             <a href="#">Sale</a>
@@ -67,10 +66,8 @@
                 <p>No item yet</p>
             </div>
         </nav>
-        <h1>REVEN</h1>
-        <p>Shop Now
-            <a href="listing.html"> <img src="img/shopnow.svg" alt="Shop"></a>
-        </p>
+        <h1 class="reven uppercase">Reven</h1>
+        <a class="middle" href=" listing.html">Shop Now  <img src="img/shopnow.svg" alt="Shop"></a>
     </header>
     <main>
         <section>
@@ -80,6 +77,12 @@
         </section>
         <section>
             <p>100% Organic & Fairtrade certified cotton</p>
+            <p class="uppercase">Mystery</p>
+            <p class="uppercase">Darling</p>
+            <p class="uppercase">Beyond</p>
+            <p class="uppercase">Reven</p>
+            <p class="uppercase">Le Feminin</p>
+            <p class="uppercase">Naturalism</p>
         </section>
         <section class="sec3">
             <p>New customer?</p>
