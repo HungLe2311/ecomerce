@@ -18,3 +18,30 @@ a:active {
 .uppercase {
     text-transform: uppercase;
 }
+
+@font-face {
+    font-family: svn-gilroy;
+    src: url(../font/svn-gilroy-medium.otf);
+}
+
+@font-face {
+    font-family: svn-gilroy;
+    src: url(../font/svn-gilroy-bold.otf);
+    font-weight: bold;
+}
+
+* {
+    font-family: svn-gilroy, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 100%;
+}
+
+.thumbnail {
+    border: 2px solid black;
+}
+
+.sort {
+    border: 1px solid #E0E0E0;
+}
