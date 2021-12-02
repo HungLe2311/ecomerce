@@ -44,4 +44,117 @@ body {
 
 .sort {
     border: 1px solid #E0E0E0;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+}
+
+.head-index {
+    background: url(../img/index-background.jpg) center;
+    background-size: cover;
+}
+
+.new-customer {
+    width: 800px;
+    margin: auto;
+    /* background: url(../img/index-bg-new-customer.jpg) center;
+    background-size: cover; */
+}
+
+.contact-sec1 p:first-child {
+    font-size: 48px;
+}
+
+.contact-sec2 p:first-child {
+    font-size: 24px;
+}
+
+.contact-sec2 p:nth-child(2),
+.contact-sec2 p:nth-child(2) a {
+    color: #828282;
+    font-size: 16px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 63px;
+}
+
+.button:hover {
+    background-color: grey;
+}
+
+.price {
+    color: #828282;
+    text-decoration: line-through;
+}
+
+.size-active {
+    border-radius: 11px
+}
+
+.size {
+    border: none
+}
+
+.footer {
+    background-color: #F2F2F2;
+}
+
+#ins {
+    color: #9B51E0;
+    text-decoration: underline;
+}
+
+.cart p {
+    display: none;
+}
+
+.cart:hover p {
+    display: block;
+}
+
+.new-customer p:first-child {
+    font-size: 48px;
+}
+
+.new-customer p:nth-child(3) {
+    font-size: 36px;
+}
+
+.tick::before {
+    content: url(img/tick.svg);
+}
+
+.middle img {
+    vertical-align: middle;
+}
+
+.reven {
+    letter-spacing: 0.5em;
+    text-align: right;
+    margin: 355px 117px 358px;
+}
+
+.path a::before {
+    content: url(img/detail-muiten.svg);
+}
+
+.path a:first-child::before {
+    content: '';
+}
+
+.grey-list li::marker {
+    color: #BDBDBD;
+}
+
+.red-list li::marker {
+    color: #EB5757;
+}
+
+.menu {
+    width: 1000px;
+    margin: auto;
 }

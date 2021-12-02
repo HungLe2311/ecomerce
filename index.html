@@ -7,55 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
-        .footer {
-            background-color: #F2F2F2;
-        }
-        
-        #ins {
-            color: #9B51E0;
-            text-decoration: underline;
-        }
-        
-        .cart p {
-            display: none;
-        }
-        
-        .cart:hover p {
-            display: block;
-        }
-        
-        .sec3 p:first-child {
-            font-size: 48px;
-        }
-        
-        .sec3 p:nth-child(3) {
-            font-size: 36px;
-        }
-        
-        .tick::before {
-            content: url(img/tick.svg);
-        }
-        
          ::marker {
             content: '';
-        }
-        
-        .middle img {
-            vertical-align: middle;
-        }
-        
-        .reven {
-            letter-spacing: 0.5em;
-            text-align: right;
         }
     </style>
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <img src="img/index-background.jpg" alt="banner">
-        <nav>
+    <header class="head-index">
+        <!-- <img src="img/index-background.jpg" alt="banner"> -->
+        <nav class="menu">
             <a class="uppercase" href="index.html">Nordic Coder</a>
             <a href="#">New</a>
             <a href="listing.html">Shop</a>
@@ -84,14 +46,14 @@
             <p class="uppercase">Le Feminin</p>
             <p class="uppercase">Naturalism</p>
         </section>
-        <section class="sec3">
+        <section class="new-customer">
             <p>New customer?</p>
             <p>Receive instantly voucher valued at</p>
             <p>50&euro;</p>
             <p>and other attractive deals and latest trends</p>
             <form><input type="email" id="email" name="email" placeholder="Email address"></form>
             <form>
-                <input type="submit" value="Register">
+                <input class="button" type="submit" value="Register">
             </form>
         </section>
         <section>

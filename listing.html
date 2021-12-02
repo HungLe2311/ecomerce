@@ -6,25 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listing</title>
-    <style>
-        .price {
-            color: #828282;
-            text-decoration: line-through;
-        }
-    </style>
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Shop</h1>
-    <form>
-        <select class="sort" name="sort">
-            <option value="Sort by latest">Sort by latest</option>
-            <option value="Hightest to lowest price">Hightest to lowest price</option>
-            <option value="Lowest to hightest price">Lowest to hightest price</option>
-        </select>
-    </form>
-    <button type="button" onclick="alert('Added to Cart')">Add to Cart <img src="img/login-arrow.svg" alt="next"></button>
+    <nav>
+        <p>Filter by size</p>
+        <button class="size" type="button">XS</button>
+        <button class="size-active" type="button">S</button>
+        <button class="size" type="button">M</button>
+        <button class="size" type="button">L</button>
+    </nav>
+    <section>
+        <h1>Shop</h1>
+        <form>
+            <select class="sort" name="sort">
+                <option value="Sort by latest">Sort by latest</option>
+                <option value="Hightest to lowest price">Hightest to lowest price</option>
+                <option value="Lowest to hightest price">Lowest to hightest price</option>
+            </select>
+        </form>
+        <button type="button" onclick="alert('Added to Cart')">Add to Cart <img src="img/login-arrow.svg" alt="next"></button>
+    </section>
     <section>
         <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
         <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
