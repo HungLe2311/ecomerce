@@ -53,11 +53,24 @@ body {
     background-size: cover;
 }
 
-.new-customer {
-    width: 800px;
+.head-about {
+    background: url(../img/about-background.jpg) center;
+    background-size: cover;
+}
+
+.about-title {
+    letter-spacing: 0.2em;
+    /* margin: 365px 1050px 365px; */
+}
+
+.voucher {
+    max-width: 800px;
     margin: auto;
-    /* background: url(../img/index-bg-new-customer.jpg) center;
-    background-size: cover; */
+}
+
+.new-customer {
+    background: url(../img/index-bg-new-customer.jpg) center;
+    background-size: cover;
 }
 
 .contact-sec1 p:first-child {
@@ -74,7 +87,7 @@ body {
     font-size: 16px;
 }
 
-.button {
+.submit {
     background-color: black;
     color: white;
     border: none;
@@ -82,7 +95,7 @@ body {
     padding: 16px 63px;
 }
 
-.button:hover {
+.submit:hover {
     background-color: grey;
 }
 
@@ -92,15 +105,34 @@ body {
 }
 
 .size-active {
-    border-radius: 11px
+    border-radius: 11px;
+    background-color: transparent;
 }
 
 .size {
-    border: none
+    border: none;
+    background-color: transparent;
+}
+
+.size:hover {
+    border-radius: 11px;
+    background-color: #828282;
 }
 
 .footer {
     background-color: #F2F2F2;
+    color: #828282;
+    padding: 70px;
+}
+
+.footer a {
+    color: black;
+}
+
+.footer1 {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 0 70px;
 }
 
 #ins {
@@ -125,7 +157,7 @@ body {
 }
 
 .tick::before {
-    content: url(img/tick.svg);
+    content: url(../img/tick.svg);
 }
 
 .middle img {
@@ -139,7 +171,7 @@ body {
 }
 
 .path a::before {
-    content: url(img/detail-muiten.svg);
+    content: url(../img/detail-muiten.svg);
 }
 
 .path a:first-child::before {
@@ -155,6 +187,61 @@ body {
 }
 
 .menu {
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
+}
+
+.thumbnail-unselect {
+    opacity: 0.5;
+}
+
+.thumbnail-unselect:hover {
+    opacity: 1;
+}
+
+.color {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+.color:hover {
+    opacity: 0.5;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-grey {
+    background-color: #E0E0E0;
+}
+
+.bg-red {
+    background-color: #EB5757;
+}
+
+.bg-orange {
+    background-color: #F2994A;
+}
+
+.bg-yellow {
+    background-color: #F2C94C;
+}
+
+.bg-green {
+    background-color: #219653;
+}
+
+.bg-blue {
+    background-color: #2F80ED;
+}
+
+.bg-violet {
+    background-color: #9B51E0;
+}
+
+.hover-opacity:hover {
+    opacity: 0.7;
 }
