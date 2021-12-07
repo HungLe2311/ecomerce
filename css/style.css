@@ -87,6 +87,10 @@ a:active {
     font-size: 48px;
 }
 
+.contact-sec2 {
+    flex-basis: 33.33%;
+}
+
 .contact-sec2 p:first-child {
     font-size: 24px;
 }
@@ -140,9 +144,11 @@ a:active {
 }
 
 .footer1 {
-    max-width: 1000px;
-    margin: auto;
     padding: 0 0 70px;
+}
+
+.footer1 ul {
+    flex-basis: 25%;
 }
 
 #ins {
@@ -177,7 +183,7 @@ a:active {
 .reven {
     letter-spacing: 0.5em;
     text-align: right;
-    margin: 355px 117px 358px;
+    padding: 355px 117px 358px;
 }
 
 .path a::before {
@@ -256,16 +262,6 @@ a:active {
     opacity: 0.7;
 }
 
-.cookie {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    max-width: 390px;
-}
-
-.cookie a {
-    color: white;
-}
-
 .float-right {
     float: right;
 }
@@ -296,7 +292,7 @@ a:active {
     width: 80px;
 }
 
-.item {
+.flex-wrap {
     flex-wrap: wrap;
 }
 
@@ -309,21 +305,9 @@ a:active {
     width: 100%;
 }
 
-.naturalism {
-    background-image: url(../img/index-sec2-6.jpg);
-    width: 510px;
-    height: 250px;
-}
-
 .darling {
     background-image: url(../img/index-sec2-2.jpg);
     width: 180px;
-    height: 250px;
-}
-
-.feminin {
-    background-image: url(../img/index-sec2-5.jpg);
-    width: 270px;
     height: 250px;
 }
 
@@ -339,10 +323,26 @@ a:active {
     height: 250px;
 }
 
-.reven-section {
-    background-image: url(../img/index-sec2-4.jpg);
-    width: 180px;
+.naturalism {
+    background-image: url(../img/index-sec2-6.jpg);
+    /* width: 510px; */
+    flex-grow: 4;
     height: 250px;
+    background-size: cover;
+}
+
+.feminin {
+    background-image: url(../img/index-sec2-5.jpg);
+    /* width: 270px; */
+    flex-grow: 2;
+    background-size: cover;
+}
+
+.reven-section {
+    background: url(../img/index-sec2-4.jpg) center;
+    /* width: 180px; */
+    flex-grow: 1;
+    background-size: cover;
 }
 
 .justify-content-center {
@@ -371,4 +371,36 @@ a:active {
 
 .align-item-end {
     align-items: flex-end;
+}
+
+.align-content-between {
+    align-content: space-between;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.margin-10 div {
+    margin: 0 10px;
+    padding: 0 25px;
+}
+
+.menu {
+    position: fixed;
+    top: 38px;
+    width: 100%;
+}
+
+.cookie {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    max-width: 390px;
+    position: fixed;
+    top: 500px;
+    left: 50px;
+}
+
+.cookie a {
+    color: white;
 }
