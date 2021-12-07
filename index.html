@@ -17,36 +17,67 @@
 <body>
     <header class="head-index">
         <!-- <img src="img/index-background.jpg" alt="banner"> -->
-        <nav class="menu">
-            <a class="uppercase" href="index.html">Nordic Coder</a>
-            <a href="#">New</a>
-            <a href="listing.html">Shop</a>
-            <a href="#">Sale</a>
-            <a href="login.html">Login</a>
-            <div class="cart">
-                <a href="#"><img src="img/giohang.svg" alt="Cart"></a>
-                <p>No item yet</p>
-            </div>
+        <nav class="container flex-container justify-content-between">
+            <a class="uppercase" href="index.html"><b>Nordic Coder</b></a>
+            <ul class="flex-container">
+                <li><a href="#">New</a></li>
+                <li><a href="listing.html">Shop</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>
+                    <div class="cart">
+                        <a href="#"><img src="img/giohang.svg" alt="Cart"></a>
+                        <p>No item yet</p>
+                    </div>
+                </li>
+            </ul>
         </nav>
         <h1 class="reven uppercase">Reven</h1>
-        <a class="middle hover-opacity" href=" listing.html">Shop Now  <img src="img/shopnow.svg" alt="Shop"></a>
+        <div class="flex-container justify-content-between">
+            <div>
+                <a href="#"><img src="img/index-arrow-left.svg" alt="back"></a>
+                <a href="#"><img src="img/index-arrow-right.svg" alt="next"></a>
+            </div>
+            <a class="middle hover-opacity" href=" listing.html">Shop Now <img src="img/shopnow.svg" alt="Shop"></a>
+        </div>
+
     </header>
     <main>
+        <!-- sec1 -->
         <section>
             <p class="clearfix"><img class="float-left" src="img/index-sec1-1.jpg" alt="image"> Find your new look with the fresh fall fashion ideas.</p>
             <p class="clearfix"><img class="float-right" src="img/index-sec1-2.jpg" alt="image"> Amazing designs & collaborations, and as alway 100% Organic & Fairtrade certified cotton. Inspired by the georgious Brasilian bucket, a wonderful serenity has taken possession
                 of my entire soul, like these sweet mornings of spring which.
             </p>
         </section>
+        <!-- sec2 -->
         <section>
+            <p> <b>Shop these outfit collections</b></p>
             <p>100% Organic & Fairtrade certified cotton</p>
-            <p class="uppercase">Mystery</p>
-            <p class="uppercase">Darling</p>
-            <p class="uppercase">Beyond</p>
-            <p class="uppercase">Reven</p>
-            <p class="uppercase">Le Feminin</p>
-            <p class="uppercase">Naturalism</p>
+            <div class="flex-container container">
+                <div class="mystery flex-container justify-content-right">
+                    <p class="uppercase">Mystery</p>
+                </div>
+                <div class="darling flex-container justify-content-center align-item-center">
+                    <p class="uppercase">Darling</p>
+                </div>
+                <div class="beyond flex-container align-item-end">
+                    <p class="uppercase">Beyond</p>
+                </div>
+            </div>
+            <div class="flex-container container">
+                <div class="reven-section flex-container justify-content-right align-item-end">
+                    <p class="uppercase">Reven</p>
+                </div>
+                <div class="feminin flex-container justify-content-right align-item-center">
+                    <p class="uppercase">Le Feminin</p>
+                </div>
+                <div class="naturalism flex-container justify-content-center align-item-end">
+                    <p class="uppercase">Naturalism</p>
+                </div>
+            </div>
         </section>
+        <!-- sec3 -->
         <section class="new-customer">
             <div class="voucher">
                 <p>New customer?</p>
@@ -59,13 +90,19 @@
                 </form>
             </div>
         </section>
+        <!-- sec4 -->
         <section>
             <p>Follow us on instagram</p>
             <a id="ins" href="https://www.instagram.com/" target="_blank">@nordiccoder</a>
+            <div class="flex-container justify-content-center">
+                <img src="img/index-sec4-1.jpg" alt="img">
+                <img src="img/index-sec4-2.jpg" alt="img">
+                <img src="img/index-sec4-3.jpg" alt="img">
+                <img src="img/index-sec4-4.jpg" alt="img">
+                <img src="img/index-sec4-5.jpg" alt="img">
+            </div>
         </section>
-
     </main>
-
     <footer class="footer">
         <nav class="footer1">
             <ul>

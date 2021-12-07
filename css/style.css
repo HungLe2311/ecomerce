@@ -196,7 +196,7 @@ a:active {
     color: #EB5757;
 }
 
-.menu {
+.container {
     max-width: 1000px;
     margin: auto;
 }
@@ -294,4 +294,81 @@ a:active {
 
 .flex-container-column>img {
     width: 80px;
+}
+
+.item {
+    flex-wrap: wrap;
+}
+
+.item>article {
+    width: 220px;
+    margin: 10px;
+}
+
+.item img {
+    width: 100%;
+}
+
+.naturalism {
+    background-image: url(../img/index-sec2-6.jpg);
+    width: 510px;
+    height: 250px;
+}
+
+.darling {
+    background-image: url(../img/index-sec2-2.jpg);
+    width: 180px;
+    height: 250px;
+}
+
+.feminin {
+    background-image: url(../img/index-sec2-5.jpg);
+    width: 270px;
+    height: 250px;
+}
+
+.mystery {
+    background-image: url(../img/index-sec2-1.jpg);
+    width: 510px;
+    height: 250px;
+}
+
+.beyond {
+    background-image: url(../img/index-sec2-3.jpg);
+    width: 270px;
+    height: 250px;
+}
+
+.reven-section {
+    background-image: url(../img/index-sec2-4.jpg);
+    width: 180px;
+    height: 250px;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-right {
+    justify-content: flex-end;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.get-in-touch {
+    width: 400px;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.align-item-end {
+    align-items: flex-end;
 }
