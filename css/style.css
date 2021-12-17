@@ -19,6 +19,10 @@ ul {
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .head-menu ul a {
     padding: 10px;
     display: inline-block;
@@ -445,13 +449,8 @@ a:active {
     bottom: 30px;
 }
 
-.products {
+.product {
     position: relative;
-}
-
-.products>article {
-    margin: 10px;
-    flex: 25%;
 }
 
 .products button {
@@ -511,4 +510,31 @@ a:active {
 
 .shop-item img {
     overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.products>article {
+    padding: 10px;
+    flex: 100%;
+}
+
+
+/* tablet */
+
+@media screen and (min-width: 600px) {
+    .products>article {
+        flex: 50%;
+    }
+}
+
+
+/* desktop */
+
+@media screen and (min-width: 992px) {
+    .products>article {
+        flex: 25%;
+    }
 }
