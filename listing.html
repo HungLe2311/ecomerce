@@ -10,90 +10,106 @@
 </head>
 
 <body>
-    <nav>
-        <p>Filter by color</p>
-        <button class="color bg-black" type="button"></button>
-        <button class="color bg-grey" type="button"></button>
-        <button class="color bg-red" type="button"></button>
-        <button class="color bg-orange" type="button"></button>
-        <button class="color bg-yellow" type="button"></button>
-        <button class="color bg-green" type="button"></button>
-        <button class="color bg-blue" type="button"></button>
-        <button class="color bg-violet" type="button"></button>
-    </nav>
-    <nav>
-        <p>Filter by size</p>
-        <button class="size" type="button">XS</button>
-        <button class="size-active" type="button">S</button>
-        <button class="size" type="button">M</button>
-        <button class="size" type="button">L</button>
-    </nav>
-    <section>
-        <h1>Shop</h1>
-        <div class="flex-container justify-content-between">
-            <p>Showing 1-12 of 24 results</p>
-            <form>
-                <select class="sort" name="sort">
-                    <option value="Sort by latest">Sort by latest</option>
-                    <option value="Hightest to lowest price">Hightest to lowest price</option>
-                    <option value="Lowest to hightest price">Lowest to hightest price</option>
-                </select>
-            </form>
+    <main class="flex-container">
+        <!-- menu filter -->
+        <div class="menu-filter">
+            <nav>
+                <p>Filter by category</p>
+                <p><a href="#">Tops</a></p>
+                <p><a href="#">Accessories</a></p>
+                <p><a href="#">Jeans</a></p>
+                <p><a href="#">Jackets</a></p>
+                <p><a href="#">Shoes</a></p>
+            </nav>
+            <nav>
+                <p>Filter by color</p>
+                <button class="color bg-black" type="button"></button>
+                <button class="color bg-grey" type="button"></button>
+                <button class="color bg-red" type="button"></button>
+                <button class="color bg-orange" type="button"></button>
+                <button class="color bg-yellow" type="button"></button>
+                <button class="color bg-green" type="button"></button>
+                <button class="color bg-blue" type="button"></button>
+                <button class="color bg-violet" type="button"></button>
+            </nav>
+            <nav>
+                <p>Filter by size</p>
+                <button class="size" type="button">XS</button>
+                <button class="size-active" type="button">S</button>
+                <button class="size" type="button">M</button>
+                <button class="size" type="button">L</button>
+            </nav>
         </div>
-        <button type="button" onclick="alert('Added to Cart')">Add to Cart <img src="img/login-arrow.svg" alt="next"></button>
-    </section>
-    <section>
-        <div class="flex-container flex-wrap shop-item">
-            <article>
-                <a href="#"> <img src="img/julia1.jpg" alt="julia">
-                    <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                </a>
-            </article>
-            <article>
-                <a href="#"> <img src="img/julia2.jpg" alt="julia">
-                    <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                </a>
-            </article>
-            <article>
-                <a href="#"> <img src="img/julia3.jpg" alt="julia">
-                    <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                </a>
-            </article>
-            <article>
-                <a href="#"> <img src="img/julia4.jpg" alt="julia">
-                    <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                </a>
-            </article>
-            <article>
-                <a href="#"> <img src="img/julia5.jpg" alt="julia">
-                    <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                </a>
-            </article>
-            <article>
-                <div class="sale-item">
-                    <a href="detail.html"> <img src="img/julia6.jpg" alt="julia">
-                        <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                    </a>
-                    <p class="sale">Sale</p>
+        <div>
+            <section>
+                <h1>Shop</h1>
+                <div class="flex-container justify-content-between">
+                    <p>Showing 1-12 of 24 results</p>
+                    <form>
+                        <select class="sort" name="sort">
+                        <option value="Sort by latest">Sort by latest</option>
+                        <option value="Hightest to lowest price">Hightest to lowest price</option>
+                        <option value="Lowest to hightest price">Lowest to hightest price</option>
+                    </select>
+                    </form>
                 </div>
-            </article>
-            <article>
-                <a href="#"> <img src="img/julia7.jpg" alt="julia">
-                    <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                </a>
-            </article>
-            <article>
-                <a href="#"> <img src="img/julia8.jpg" alt="julia">
-                    <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                </a>
-            </article>
-            <article>
-                <a href="#"> <img src="img/julia9.jpg" alt="julia">
-                    <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                </a>
-            </article>
+                <button type="button" onclick="alert('Added to Cart')">Add to Cart <img src="img/login-arrow.svg" alt="next"></button>
+            </section>
+            <section>
+                <div class="flex-container flex-wrap shop-item">
+                    <article>
+                        <a href="#"> <img src="img/julia1.jpg" alt="julia">
+                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#"> <img src="img/julia2.jpg" alt="julia">
+                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#"> <img src="img/julia3.jpg" alt="julia">
+                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#"> <img src="img/julia4.jpg" alt="julia">
+                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#"> <img src="img/julia5.jpg" alt="julia">
+                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
+                        </a>
+                    </article>
+                    <article>
+                        <div class="sale-item">
+                            <a href="detail.html"> <img src="img/julia6.jpg" alt="julia">
+                                <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
+                            </a>
+                            <p class="sale">Sale</p>
+                        </div>
+                    </article>
+                    <article>
+                        <a href="#"> <img src="img/julia7.jpg" alt="julia">
+                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#"> <img src="img/julia8.jpg" alt="julia">
+                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#"> <img src="img/julia9.jpg" alt="julia">
+                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
+                        </a>
+                    </article>
+                </div>
+            </section>
         </div>
-    </section>
+
+    </main>
 
 </body>
 
