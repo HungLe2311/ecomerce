@@ -1,116 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Listing</title>
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<body>
-    <main class="flex-container">
+  <body>
+      <!-- head menu -->
+    <nav class="head-menu">
+      <div class="container flex-container justify-content-between">
+        <a class="uppercase" href="index.html"><b>Nordic Coder</b></a>
+        <!-- menu chinh -->
+        <ul class="flex-container">
+          <li><a href="#">New</a></li>
+          <li>
+            <a href="listing.html">Shop</a>
+            <!-- menu con -->
+            <ul>
+              <li><a href="#">Tops</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Jeans</a></li>
+              <li>
+                <a href="#">Jackets</a>
+                <!-- menu con -->
+                <ul class="sub-menu">
+                  <li><a href="#">Blazer</a></li>
+                  <li><a href="#">Coat</a></li>
+                  <li><a href="#">Sweater</a></li>
+                  <li><a href="#">Denim</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Shoes</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li>
+            <div class="cart">
+              <a href="#"><img src="img/giohang.svg" alt="Cart" /></a>
+              <p>No item yet</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main class="flex-container container main-not-index">
+      
         <!-- menu filter -->
-        <div class="menu-filter">
-            <nav>
-                <p>Filter by category</p>
-                <p><a href="#">Tops</a></p>
-                <p><a href="#">Accessories</a></p>
-                <p><a href="#">Jeans</a></p>
-                <p><a href="#">Jackets</a></p>
-                <p><a href="#">Shoes</a></p>
-            </nav>
-            <nav>
-                <p>Filter by color</p>
-                <button class="color bg-black" type="button"></button>
-                <button class="color bg-grey" type="button"></button>
-                <button class="color bg-red" type="button"></button>
-                <button class="color bg-orange" type="button"></button>
-                <button class="color bg-yellow" type="button"></button>
-                <button class="color bg-green" type="button"></button>
-                <button class="color bg-blue" type="button"></button>
-                <button class="color bg-violet" type="button"></button>
-            </nav>
-            <nav>
-                <p>Filter by size</p>
-                <button class="size" type="button">XS</button>
-                <button class="size-active" type="button">S</button>
-                <button class="size" type="button">M</button>
-                <button class="size" type="button">L</button>
-            </nav>
-        </div>
-        <div>
-            <section>
-                <h1>Shop</h1>
-                <div class="flex-container justify-content-between">
-                    <p>Showing 1-12 of 24 results</p>
-                    <form>
-                        <select class="sort" name="sort">
-                        <option value="Sort by latest">Sort by latest</option>
-                        <option value="Hightest to lowest price">Hightest to lowest price</option>
-                        <option value="Lowest to hightest price">Lowest to hightest price</option>
-                    </select>
-                    </form>
-                </div>
-                <button type="button" onclick="alert('Added to Cart')">Add to Cart <img src="img/login-arrow.svg" alt="next"></button>
-            </section>
-            <section>
-                <div class="flex-container flex-wrap shop-item">
-                    <article>
-                        <a href="#"> <img src="img/julia1.jpg" alt="julia">
-                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#"> <img src="img/julia2.jpg" alt="julia">
-                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#"> <img src="img/julia3.jpg" alt="julia">
-                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#"> <img src="img/julia4.jpg" alt="julia">
-                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#"> <img src="img/julia5.jpg" alt="julia">
-                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                        </a>
-                    </article>
-                    <article>
-                        <div class="sale-item">
-                            <a href="detail.html"> <img src="img/julia6.jpg" alt="julia">
-                                <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                            </a>
-                            <p class="sale">Sale</p>
-                        </div>
-                    </article>
-                    <article>
-                        <a href="#"> <img src="img/julia7.jpg" alt="julia">
-                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#"> <img src="img/julia8.jpg" alt="julia">
-                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#"> <img src="img/julia9.jpg" alt="julia">
-                            <p><b>Julia</b> <br> $99.000 <span class="price">$119.00</span> </p>
-                        </a>
-                    </article>
-                </div>
-            </section>
-        </div>
+      <div class="menu-filter">
+        <nav>
+          <p class="grey">Filter by category</p>
+          <p><a href="#">Tops</a></p>
+          <p><a href="#">Accessories</a></p>
+          <p><a href="#">Jeans</a></p>
+          <p><a href="#">Jackets</a></p>
+          <p><a href="#">Shoes</a></p>
+        </nav>
+        <nav>
+          <p class="grey">Filter by color</p>
+          <button class="color bg-black color-active" type="button"></button>
+          <button class="color bg-grey" type="button"></button>
+          <button class="color bg-red" type="button"></button>
+          <button class="color bg-orange" type="button"></button>
+          <button class="color bg-yellow" type="button"></button>
+          <button class="color bg-green" type="button"></button>
+          <button class="color bg-blue" type="button"></button>
+          <button class="color bg-violet" type="button"></button>
+        </nav>
+        <nav>
+          <p class="grey">Filter by size</p>
+          <button class="size" type="button">XS</button>
+          <button class="size-active" type="button">S</button>
+          <button class="size" type="button">M</button>
+          <button class="size" type="button">L</button>
+        </nav>
+      </div>
 
+      <!-- SHOP -->
+      <div class="shop-listing">
+
+        <!-- sec1 -->
+        <section>
+          <h2>Shop</h2>
+          <div class="flex-container justify-content-between">
+            <p class="grey">Showing 1-12 of 24 results</p>
+            <form>
+              <select class="sort" name="sort">
+                <option value="Sort by latest">Sort by latest</option>
+                <option value="Hightest to lowest price">
+                  Hightest to lowest price
+                </option>
+                <option value="Lowest to hightest price">
+                  Lowest to hightest price
+                </option>
+              </select>
+            </form>
+          </div>
+        </section>
+
+        <!-- sec2 -->
+        <section class="products">
+          <div class="flex-container flex-wrap shop-item">
+            <article class="product">
+              <a href="#">
+                <div>
+                  <img src="img/julia1.jpg" alt="julia" />
+                </div>
+                <p>
+                  <b>Julia</b> <br />
+                  $99.000 <span class="price">$119.00</span>
+                </p>
+              </a>
+              <button type="button" onclick="alert('Added to Cart')">
+                Add to Cart <img src="img/login-arrow.svg" alt="next" />
+              </button>
+            </article>
+            <article class="product">
+              <a href="#">
+                <div>
+                  <img src="img/julia2.jpg" alt="julia" />
+                </div>
+                <p>
+                  <b>Julia</b> <br />
+                  $99.000 <span class="price">$119.00</span>
+                </p>
+              </a>
+              <button type="button" onclick="alert('Added to Cart')">
+                Add to Cart <img src="img/login-arrow.svg" alt="next" />
+              </button>
+            </article>
+            <article class="product">
+              <a href="#">
+                <div>
+                  <img src="img/julia3.jpg" alt="julia" />
+                </div>
+                <p>
+                  <b>Julia</b> <br />
+                  $99.000 <span class="price">$119.00</span>
+                </p>
+              </a>
+              <button type="button" onclick="alert('Added to Cart')">
+                Add to Cart <img src="img/login-arrow.svg" alt="next" />
+              </button>
+            </article>
+            <article class="product">
+              <a href="#">
+                <div>
+                  <img src="img/julia4.jpg" alt="julia" />
+                </div>
+                <p>
+                  <b>Julia</b> <br />
+                  $99.000 <span class="price">$119.00</span>
+                </p>
+              </a>
+              <button type="button" onclick="alert('Added to Cart')">
+                Add to Cart <img src="img/login-arrow.svg" alt="next" />
+              </button>
+            </article>
+            <article class="product">
+              <a href="#">
+                <div>
+                  <img src="img/julia5.jpg" alt="julia" />
+                </div>
+                <p>
+                  <b>Julia</b> <br />
+                  $99.000 <span class="price">$119.00</span>
+                </p>
+              </a>
+              <button type="button" onclick="alert('Added to Cart')">
+                Add to Cart <img src="img/login-arrow.svg" alt="next" />
+              </button>
+            </article>
+            <article class="product">
+              <nav class="sale-item">
+                <a href="detail.html">
+                  <div>
+                    <img src="img/julia6.jpg" alt="julia" />
+                  </div>
+                  <p>
+                    <b>Julia</b> <br />
+                    $99.000 <span class="price">$119.00</span>
+                  </p>
+                </a>
+                <p class="sale">Sale</p>
+              </nav>
+              <button type="button" onclick="alert('Added to Cart')">
+                Add to Cart <img src="img/login-arrow.svg" alt="next" />
+              </button>
+            </article>
+            <article class="product">
+              <a href="#">
+                <div>
+                  <img src="img/julia7.jpg" alt="julia" />
+                </div>
+                <p>
+                  <b>Julia</b> <br />
+                  $99.000 <span class="price">$119.00</span>
+                </p>
+              </a>
+              <button type="button" onclick="alert('Added to Cart')">
+                Add to Cart <img src="img/login-arrow.svg" alt="next" />
+              </button>
+            </article>
+            <article class="product">
+              <a href="#">
+                <div>
+                  <img src="img/julia8.jpg" alt="julia" />
+                </div>
+                <p>
+                  <b>Julia</b> <br />
+                  $99.000 <span class="price">$119.00</span>
+                </p>
+              </a>
+              <button type="button" onclick="alert('Added to Cart')">
+                Add to Cart <img src="img/login-arrow.svg" alt="next" />
+              </button>
+            </article>
+            <article class="product">
+              <a href="#">
+                <div>
+                  <img src="img/julia9.jpg" alt="julia" />
+                </div>
+                <p>
+                  <b>Julia</b> <br />
+                  $99.000 <span class="price">$119.00</span>
+                </p>
+              </a>
+              <button type="button" onclick="alert('Added to Cart')">
+                Add to Cart <img src="img/login-arrow.svg" alt="next" />
+              </button>
+            </article>
+          </div>
+        </section>
+
+        <!-- PAGE -->
+        <nav class="middle listing-page">
+            <button class="size page-active" type="button">1</button>
+            <button class="size" type="button">2</button>
+            <button class="size" type="button"><img src="img/arrow-page.svg" alt="next"></button>
+        </nav>
+      </div>
     </main>
 
-</body>
-
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+          <nav class="footer1 flex-container">
+            <ul>
+              <li>About us</li>
+              <br />
+              <li><a href="#">Our company</a></li>
+              <li><a href="#">Our history</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Journal</a></li>
+              <li><a href="#">Store Locations</a></li>
+            </ul>
+            <ul>
+              <li>How can we help</li>
+              <br />
+              <li><a href="#">Our company</a></li>
+              <li><a href="#">Our history</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Journal</a></li>
+              <li><a href="#">Store Locations</a></li>
+            </ul>
+            <ul>
+              <li>Shop</li>
+              <br />
+              <li><a href="#">Our company</a></li>
+              <li><a href="#">Our history</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Journal</a></li>
+            </ul>
+            <ul>
+              <li>Security system</li>
+              <br />
+              <li class="tick"><a href="#"> PCI security standards</a></li>
+              <li class="tick"><a href="#"> Protect card owner</a></li>
+              <li class="tick"><a href="#"> Encrypted network</a></li>
+            </ul>
+          </nav>
+          <p>Copyright © 2020 Nordic Coder. All rights reserved.</p>
+        </div>
+      </footer>
+  </body>
 </html>

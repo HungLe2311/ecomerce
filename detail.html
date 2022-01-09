@@ -1,86 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail</title>
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<body>
-    <!-- sec1 -->
-    <section class="flex-container">
+  <body>
+    <!-- head menu -->
+    <nav class="head-menu">
+      <div class="container flex-container justify-content-between">
+        <a class="uppercase" href="index.html"><b>Nordic Coder</b></a>
+        <!-- menu chinh -->
+        <ul class="flex-container">
+          <li><a href="#">New</a></li>
+          <li>
+            <a href="listing.html">Shop</a>
+            <!-- menu con -->
+            <ul>
+              <li><a href="#">Tops</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Jeans</a></li>
+              <li>
+                <a href="#">Jackets</a>
+                <!-- menu con -->
+                <ul class="sub-menu">
+                  <li><a href="#">Blazer</a></li>
+                  <li><a href="#">Coat</a></li>
+                  <li><a href="#">Sweater</a></li>
+                  <li><a href="#">Denim</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Shoes</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li>
+            <div class="cart">
+              <a href="#"><img src="img/giohang.svg" alt="Cart" /></a>
+              <p>No item yet</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main class="main-not-index">
+      <!-- sec1 -->
+      <section class="flex-container container detail-sec1">
         <div class="flex-container-column">
-            <img class="thumbnail-unselect" src="img/detail0.jpg" alt="thumbnail">
-            <img class="thumbnail-unselect" src="img/detail1.jpg" alt="thumbnail">
-            <img class="thumbnail-unselect" src="img/detail2.jpg" alt="thumbnail">
-            <img class="thumbnail" src="img/detail3.jpg" alt="thumbnail">
+          <img
+            class="thumbnail-unselect"
+            src="img/detail0.jpg"
+            alt="thumbnail"
+          />
+          <img
+            class="thumbnail-unselect"
+            src="img/detail1.jpg"
+            alt="thumbnail"
+          />
+          <img
+            class="thumbnail-unselect"
+            src="img/detail2.jpg"
+            alt="thumbnail"
+          />
+          <img class="thumbnail" src="img/detail3.jpg" alt="thumbnail" />
         </div>
-        <img src="img/detail-sec1.jpg" alt="Julia">
-        <div class="flex-container flex-wrap align-content-between">
-            <div class="w-100">
-                <nav class="path">
-                    <a href="index.html">Home</a>
-                    <a href="#">Jackets</a>
-                    <a href="#">Julia</a>
-                </nav>
-                <form>
-                    <input type="number" name="soluong" min="1">
-                </form>
-                <button type="button" onclick="alert('Added to Cart')">Add to Cart</button>
-                <p>SKU: 86423-AB</p>
-                <p>Category: <span style="color: #EB5757;">Jacket</span></p>
-            </div>
-            <div class="w-100">
-                <p>Share</p>
-            </div>
-        </div>
-    </section>
-    <!-- sec2 -->
-    <p>CONTENT AND CARE</p>
-    <ul class="grey-list">
-        <li>Nylon, Metallic, Spandex</li>
-        <li>Imported</li>
-        <li>Dry Flat</li>
-    </ul>
-    <p>DETAILS & FIT</p>
-    <ul class="red-list">
-        <li>Length: 32"</li>
-        <li>Measured in size Small</li>
-    </ul>
-    <p>Red modeled on size Small.</p>
-    <p>Model’s profile: height 5'7", bust 32", waist 25”</p>
-    <!-- sec3 -->
-    <section>
-        <p><b>Related Products</b></p>
-        <div class="flex-container container products flex-wrap">
-            <article>
-                <div class="product">
-                    <a href="#"> <img src="img/detail-sec3-1.jpg" alt="elly">
-                        <p><b>Elly</b> <br>$99.000 <span class="price">$119.00</span> </p>
-                    </a>
-                    <button type="button" onclick="alert('Added to Cart')">Add to Cart </button>
-                </div>
-            </article>
-            <article>
-                <a href="#"> <img src="img/detail-sec3-2.jpg" alt="elly">
-                    <p><b>Elly</b> <br>$99.000 <span class="price">$119.00</span> </p>
-                </a>
-            </article>
-            <article>
-                <a href="#"> <img src="img/detail-sec3-3.jpg" alt="elly">
-                    <p><b>Elly</b> <br>$99.000 <span class="price">$119.00</span> </p>
-                </a>
-            </article>
-            <article>
-                <a href="#"> <img src="img/detail-sec3-4.jpg" alt="elly">
-                    <p><b>Elly</b> <br>$99.000 <span class="price">$119.00</span> </p>
-                </a>
-            </article>
-        </div>
-    </section>
-</body>
 
+        <img src="img/detail-sec1.jpg" alt="Julia" />
+
+        <div class="flex-container flex-wrap align-content-between">
+          <div class="w-100">
+            <nav class="path">
+              <a href="index.html">Home</a>
+              <a href="#">Jackets</a>
+              <a href="#">Julia</a>
+            </nav>
+            <h2>Julia</h2>
+            <p>$249.00</p>
+
+            <div class="flex-container">
+              <p class="grey">Color</p>
+              <button class="color bg-black" type="button"></button>
+              <button class="color bg-grey" type="button"></button>
+              <button class="color bg-red color-active" type="button"></button>
+            </div>
+
+            <div class="flex-container">
+              <p class="grey">Size</p>
+              <button class="size" type="button">XS</button>
+              <button class="size-active" type="button">S</button>
+              <button class="size" type="button">M</button>
+              <button class="size" type="button">L</button>
+            </div>
+
+            <div>
+              <input type="number" name="soluong" min="1" />
+              <button
+                class="middle button-cart"
+                type="button"
+                onclick="alert('Added to Cart')"
+              >
+                Add to Cart <img src="img/shopnow.svg" alt="Shop" />
+              </button>
+              <button class="like-item" type="button">
+                <img src="img/like-item.svg" alt="like" />
+              </button>
+            </div>
+
+            <p class="grey">SKU: 86423-AB</p>
+            <p class="grey">
+              Category: <span style="color: #eb5757">Jacket</span>
+            </p>
+          </div>
+
+          <div class="w-100 flex-container">
+            <p class="grey">Share</p>
+            <a href="#"><img src="img/fb.svg" alt="share" /></a>
+            <a href="#"><img src="img/share2.svg" alt="share" /></a>
+            <a href="#"><img src="img/share3.svg" alt="share" /></a>
+            <a href="#"><img src="img/share4.svg" alt="share" /></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- sec2 -->
+      <section class="container detail-sec2">
+        <div class="flex-container justify-content-center description-menu">
+          <p>Description</p>
+          <p class="grey">Additional information</p>
+          <p class="grey">Reviews (1)</p>
+        </div>
+        <p class="grey">CONTENT AND CARE</p>
+        <ul class="grey-list">
+          <li>Nylon, Metallic, Spandex</li>
+          <li>Imported</li>
+          <li>Dry Flat</li>
+        </ul>
+        <p class="grey">DETAILS & FIT</p>
+        <ul class="red-list">
+          <li>Length: 32"</li>
+          <li>Measured in size Small</li>
+        </ul>
+        <p>Red modeled on size Small.</p>
+        <p>Model’s profile: height 5'7", bust 32", waist 25”</p>
+      </section>
+
+      <!-- sec3 -->
+      <section class="container detail-sec3">
+        <h3>Related Products</h3>
+        <div class="flex-container products flex-wrap detail-products">
+          <article class="product">
+            <a href="#">
+              <img src="img/detail-sec3-1.jpg" alt="elly" />
+              <p>
+                <b>Elly</b> <br />$99.000 <span class="price">$119.00</span>
+              </p>
+            </a>
+            <button type="button" onclick="alert('Added to Cart')">
+              Add to Cart
+            </button>
+          </article>
+          <article class="product">
+            <a href="#">
+              <img src="img/detail-sec3-2.jpg" alt="elly" />
+              <p>
+                <b>Elly</b> <br />$99.000 <span class="price">$119.00</span>
+              </p>
+            </a>
+            <button type="button" onclick="alert('Added to Cart')">
+              Add to Cart
+            </button>
+          </article>
+          <article class="product">
+            <a href="#">
+              <img src="img/detail-sec3-3.jpg" alt="elly" />
+              <p>
+                <b>Elly</b> <br />$99.000 <span class="price">$119.00</span>
+              </p>
+            </a>
+            <button type="button" onclick="alert('Added to Cart')">
+              Add to Cart
+            </button>
+          </article>
+          <article class="product">
+            <a href="#">
+              <img src="img/detail-sec3-4.jpg" alt="elly" />
+              <p>
+                <b>Elly</b> <br />$99.000 <span class="price">$119.00</span>
+              </p>
+            </a>
+            <button type="button" onclick="alert('Added to Cart')">
+              Add to Cart
+            </button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer1 flex-container">
+          <ul>
+            <li>About us</li>
+            <br />
+            <li><a href="#">Our company</a></li>
+            <li><a href="#">Our history</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Store Locations</a></li>
+          </ul>
+          <ul>
+            <li>How can we help</li>
+            <br />
+            <li><a href="#">Our company</a></li>
+            <li><a href="#">Our history</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Store Locations</a></li>
+          </ul>
+          <ul>
+            <li>Shop</li>
+            <br />
+            <li><a href="#">Our company</a></li>
+            <li><a href="#">Our history</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Journal</a></li>
+          </ul>
+          <ul>
+            <li>Security system</li>
+            <br />
+            <li class="tick"><a href="#"> PCI security standards</a></li>
+            <li class="tick"><a href="#"> Protect card owner</a></li>
+            <li class="tick"><a href="#"> Encrypted network</a></li>
+          </ul>
+        </nav>
+        <p>Copyright © 2020 Nordic Coder. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
