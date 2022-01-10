@@ -120,6 +120,7 @@ a:active {
   bottom: 30px;
   left: 50px;
   right: 50px;
+  z-index: 2;
 }
 
 .head-bottom-menu div img:last-child {
