@@ -176,6 +176,10 @@ a:active {
   font-size: 16px;
 }
 
+.contact-sec2 div > a:last-child {
+  text-decoration: underline;
+}
+
 .submit {
   background-color: black;
   color: white;
@@ -514,6 +518,19 @@ a:active {
   position: fixed;
   bottom: 50px;
   left: 50px;
+  padding: 25px;
+}
+
+.cookie button {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background-color: transparent;
+  color: white;
+  margin-left: 50px;
+}
+
+.cookie div {
+  text-align: end;
 }
 
 .cookie a {
@@ -750,6 +767,11 @@ h3 {
 
 .login-form2 input {
   margin-top: 50px;
+}
+
+.login-form2 a {
+  margin-left: 160px;
+  text-decoration: underline;
 }
 
 .contact-sec3 {
