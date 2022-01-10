@@ -82,9 +82,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-a {
   color: black;
 }
 
@@ -160,20 +157,20 @@ a:active {
   margin: 100px 0;
 }
 
-.contact-sec1 p:first-child {
-  font-size: 48px;
+.contact-sec1 {
+  margin-bottom: 80px;
 }
 
-.contact-sec2 {
+.contact-sec2 > div {
   flex-basis: 33.33%;
 }
 
-.contact-sec2 p:first-child {
+.contact-sec2 p:nth-child(2) {
   font-size: 24px;
 }
 
-.contact-sec2 p:nth-child(2),
-.contact-sec2 p:nth-child(2) a {
+.contact-sec2 p:nth-child(3),
+.contact-sec2 p:nth-child(3) a {
   color: #828282;
   font-size: 16px;
 }
@@ -360,7 +357,7 @@ a:active {
 }
 
 .detail-sec1 button,
-a {
+.detail-sec1 a {
   align-self: center;
   margin: 0 7px;
 }
@@ -458,6 +455,15 @@ a {
 
 .get-in-touch {
   width: 400px;
+  align-self: center;
+}
+
+.get-in-touch p {
+  margin: 40px 0;
+}
+
+.get-in-touch img {
+  margin-left: 15px;
 }
 
 .align-item-center {
@@ -618,6 +624,7 @@ h2 {
 h3 {
   font-size: 31px;
   font-weight: bold;
+  margin: 0;
 }
 
 .index-sec1 {
@@ -715,6 +722,99 @@ h3 {
 
 .detail-sec3 h3 {
   margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.create {
+  border-bottom: 1px solid #000000;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.create::after {
+  content: url(../img/login-arrow.svg);
+}
+
+.account input {
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: 60px;
+  width: 400px;
+}
+
+.login {
+  margin-left: 35%;
+}
+
+.login-form2 input {
+  margin-top: 50px;
+}
+
+.contact-sec3 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.contact-sec3 div:first-child,
+.contact-sec4 div:first-child {
+  width: 33%;
+  margin-right: 170px;
+}
+
+.contact-sec3 form input,
+textarea {
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  width: 450px;
+  margin-bottom: 60px;
+}
+
+.contact-sec4 li {
+  height: 50px;
+  width: 450px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.contact-sec4 img {
+  margin-right: 15px;
+}
+
+.about-sec1 > p {
+  width: 800px;
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  font-size: 20px;
+}
+
+.about-sec1 > div div:first-child {
+  margin-right: 100px;
+}
+
+.about-sec2 > div > div {
+  flex-basis: 25%;
+  margin-top: 100px;
+}
+
+.about-sec2 {
+  background-color: #f2f2f2;
+  padding: 110px 0 140px;
+  margin-bottom: 130px;
+}
+
+.about-sec4 {
+  margin-top: 130px;
+}
+
+.about-sec4 > div > div {
+  flex-basis: 33%;
+  margin-top: 80px;
+}
+
+.about-sec4 img {
+  margin-bottom: 40px;
 }
 
 /* tablet */

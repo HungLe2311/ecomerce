@@ -1,29 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .create::after {
-            content: url(img/login-arrow.svg);
-        }
-    </style>
-    <link href="css/style.css" rel="stylesheet">
-</head>
+  <body>
+    <!-- head menu -->
+    <nav class="head-menu">
+      <div class="container flex-container justify-content-between">
+        <a class="uppercase" href="index.html"><b>Nordic Coder</b></a>
+        <!-- menu chinh -->
+        <ul class="flex-container">
+          <li><a href="#">New</a></li>
+          <li>
+            <a href="listing.html">Shop</a>
+            <!-- menu con -->
+            <ul>
+              <li><a href="#">Tops</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Jeans</a></li>
+              <li>
+                <a href="#">Jackets</a>
+                <!-- menu con -->
+                <ul class="sub-menu">
+                  <li><a href="#">Blazer</a></li>
+                  <li><a href="#">Coat</a></li>
+                  <li><a href="#">Sweater</a></li>
+                  <li><a href="#">Denim</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Shoes</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li>
+            <div class="cart">
+              <a href="#"><img src="img/giohang.svg" alt="Cart" /></a>
+              <p>No item yet</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-<body>
-    <h1>Login</h1>
-    <a class="create" href="register.html">Create account </a>
-    <form>
-        <input type="email" id="email" name="email" placeholder="Email address*"> <br><br>
-        <input type="password" name="pass" placeholder="Pasword*" pattern="[0-9]{4}"> <br><br>
-        <input type="checkbox" id="rmb" name="rmb" value="Remember me">
-        <label for="rmb">Remember me</label> <br><br>
-        <input class="submit" type="submit" value="Login">
-    </form>
-</body>
+    <!-- main -->
+    <main class="main-not-index login">
+      <div class="flex-container">
+        <h2>Login</h2>
+        <a class="create" href="register.html">Create account </a>
+      </div>
 
+      <form class="account">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email address*"
+        />
+        <br />
+        <input
+          type="password"
+          name="pass"
+          placeholder="Pasword*"
+          pattern="[0-9]{4}"
+        />
+      </form>
+      <form class="login-form2">
+        <input type="checkbox" id="rmb" name="rmb" value="Remember me" />
+        <label for="rmb">Remember me</label> <br /><br />
+        <input class="submit" type="submit" value="Login" />
+      </form>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer1 flex-container">
+          <ul>
+            <li>About us</li>
+            <br />
+            <li><a href="#">Our company</a></li>
+            <li><a href="#">Our history</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Store Locations</a></li>
+          </ul>
+          <ul>
+            <li>How can we help</li>
+            <br />
+            <li><a href="#">Our company</a></li>
+            <li><a href="#">Our history</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Store Locations</a></li>
+          </ul>
+          <ul>
+            <li>Shop</li>
+            <br />
+            <li><a href="#">Our company</a></li>
+            <li><a href="#">Our history</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Journal</a></li>
+          </ul>
+          <ul>
+            <li>Security system</li>
+            <br />
+            <li class="tick"><a href="#"> PCI security standards</a></li>
+            <li class="tick"><a href="#"> Protect card owner</a></li>
+            <li class="tick"><a href="#"> Encrypted network</a></li>
+          </ul>
+        </nav>
+        <p>Copyright © 2020 Nordic Coder. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
