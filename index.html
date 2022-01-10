@@ -7,17 +7,17 @@
     <title>Home</title>
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header class="head-index">
-      <!-- <img src="img/index-background.jpg" alt="banner"> -->
+    <!-- Bootstrap Carousel -->
+    <header id="myCarousel" class="carousel slide" data-ride="carousel">
       <nav class="head-menu">
         <div class="container flex-container justify-content-between">
           <a class="uppercase" href="index.html"><b>Nordic Coder</b></a>
@@ -55,21 +55,96 @@
           </ul>
         </div>
       </nav>
-      <h1 class="reven uppercase">Reven</h1>
-      <div
-        class="flex-container justify-content-between under-header head-bottom-menu"
-      >
-        <div>
-          <a href="#"><img src="img/index-arrow-left.svg" alt="back" /></a>
-          <a href="#"><img src="img/index-arrow-right.svg" alt="next" /></a>
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="head-index">
+            <!-- <img src="img/index-background.jpg" alt="banner"> -->
+            <h1 class="reven uppercase">Reven</h1>
+            <div
+              class="flex-container justify-content-between under-header head-bottom-menu"
+            >
+              <div>
+                <a href="#"
+                  ><img src="img/index-arrow-left.svg" alt="back"
+                /></a>
+                <a href="#"
+                  ><img src="img/index-arrow-right.svg" alt="next"
+                /></a>
+              </div>
+              <div>
+                <a class="middle hover-opacity" href=" listing.html"
+                  >Shop Now <img src="img/shopnow.svg" alt="Shop"
+                /></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <a class="middle hover-opacity" href=" listing.html"
-            >Shop Now <img src="img/shopnow.svg" alt="Shop"
-          /></a>
+        <div class="carousel-item">
+          <div class="head-index">
+            <!-- <img src="img/index-background.jpg" alt="banner"> -->
+            <h1 class="reven uppercase">Reven</h1>
+            <div
+              class="flex-container justify-content-between under-header head-bottom-menu"
+            >
+              <div>
+                <a href="#"
+                  ><img src="img/index-arrow-left.svg" alt="back"
+                /></a>
+                <a href="#"
+                  ><img src="img/index-arrow-right.svg" alt="next"
+                /></a>
+              </div>
+              <div>
+                <a class="middle hover-opacity" href=" listing.html"
+                  >Shop Now <img src="img/shopnow.svg" alt="Shop"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="head-index">
+            <!-- <img src="img/index-background.jpg" alt="banner"> -->
+            <h1 class="reven uppercase">Reven</h1>
+            <div
+              class="flex-container justify-content-between under-header head-bottom-menu"
+            >
+              <div>
+                <a href="#"
+                  ><img src="img/index-arrow-left.svg" alt="back"
+                /></a>
+                <a href="#"
+                  ><img src="img/index-arrow-right.svg" alt="next"
+                /></a>
+              </div>
+              <div>
+                <a class="middle hover-opacity" href=" listing.html"
+                  >Shop Now <img src="img/shopnow.svg" alt="Shop"
+                /></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
     </header>
+
     <main>
       <!-- sec1 -->
       <section class="container index-sec1">

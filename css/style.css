@@ -642,11 +642,11 @@ h3 {
 }
 
 .index-sec1 h3 {
-  transform: translateY(70%);
+  transform: translateY(100%);
 }
 
 .index-sec1 p {
-  transform: translateY(50%);
+  transform: translateY(70%);
 }
 
 .white {
