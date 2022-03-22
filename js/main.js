@@ -19,6 +19,27 @@ function loadData() {
     });
 }
 
+const showToast = (mess, type = "success") => {
+  const color = {
+    warning: "#ffc107",
+    info: "#007bff",
+    success: "#28a745",
+    error: "#dc3545",
+  };
+  Toastify({
+    text: mess,
+    duration: 3000,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "right", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: color[type],
+    },
+    onClick: function () {}, // Callback after click
+  }).showToast();
+};
+
 //Hàm render
 let render = (products) => {
   let output = "";
@@ -184,7 +205,16 @@ function addToCart(id, qtyAdd) {
 
   //Show lại tổng số lượng sp
   showCartQty();
+
+  // toast
+  showToast("Product added to cart successfully");
 }
+const formatPrice = (p) => {
+  if (!p) {
+    return p;
+  }
+  return p.toFixed(2).toLocaleString().replace(".", ",");
+};
 
 //hàm show cart
 let showCart = () => {
@@ -199,8 +229,10 @@ let showCart = () => {
     }" type="number" pattern="^[0-9]"  min="1" step="1" oninput="validity.valid||(value='1');" value="${
       item.qty
     }"></td>
-                <td>${item.price}</td>
-                <td id="amount${item.id}">${item.qty * item.price}</td>
+                <td>${formatPrice(item.price)}</td>
+                <td id="amount${item.id}">${formatPrice(
+      item.qty * item.price
+    )}</td>
                 <td><button onclick="deleteItem(${
                   item.id
                 })"><i class="fa fa-trash"></i></button></td>
@@ -232,7 +264,7 @@ let showCartTotal = () => {
   //   return s + item.qty * item.price;
   // }, 0);
   document.querySelector("#total").innerHTML =
-    "Total: " + total.toLocaleString() + " $";
+    "Total: " + formatPrice(total) + " $";
 };
 
 //hàm thay đổi số lượng sản phẩm trang cart
@@ -254,8 +286,9 @@ function updateQty(id) {
   //Cập nhật hiển thị, thành tiền
   showCartQty();
   showCartTotal();
-  document.querySelector(`#amount${id}`).innerHTML =
-    cart[index].price * cart[index].qty;
+  document.querySelector(`#amount${id}`).innerHTML = formatPrice(
+    cart[index].price * cart[index].qty
+  );
 }
 
 //hàm xóa sản phẩm
