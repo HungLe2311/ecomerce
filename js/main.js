@@ -28,7 +28,7 @@ const showToast = (mess, type = "success") => {
   };
   Toastify({
     text: mess,
-    duration: 3000,
+    duration: 2000,
     close: true,
     gravity: "top", // `top` or `bottom`
     position: "right", // `left`, `center` or `right`
@@ -307,6 +307,7 @@ let deleteItem = (id) => {
     showCartTotal();
     showCart();
     showCartQty();
+    showToast("The product has been removed", "error");
   }
 };
 window.addEventListener("load", function () {
