@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Listing</title>
+    <title>Cart</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-
   <body>
     <!-- head menu -->
     <nav class="head-menu">
@@ -48,88 +54,23 @@
       </div>
     </nav>
 
-    <!-- main -->
-    <main class="flex-container container main-not-index">
-      <!-- menu filter -->
-      <div class="menu-filter">
-        <nav id="filterCategoty">
-          <p class="grey">Filter by category</p>
-          <p><a href="javascript:void(0)" id="all">All items</a></p>
-          <!-- <button onclick="allItems()">All items</button> -->
-        </nav>
-        <br />
-        <nav>
-          <p class="grey">Filter by price</p>
-          <form id="filter">
-            <label for="priceFrom">From: $</label>
-            <input
-              type="number"
-              min="0"
-              id="priceFrom"
-              name="priceFrom"
-            /><br /><br />
-            <label for="priceTo">To: $</label>
-            <input
-              type="number"
-              min="1"
-              id="priceTo"
-              name="priceTo"
-            /><br /><br />
-            <input id="filter1" type="button" value="Filter" />
-          </form>
-        </nav>
-        <!-- <nav>
-          <p class="grey">Filter by color</p>
-          <button class="color bg-black color-active" type="button"></button>
-          <button class="color bg-grey" type="button"></button>
-          <button class="color bg-red" type="button"></button>
-          <button class="color bg-orange" type="button"></button>
-          <button class="color bg-yellow" type="button"></button>
-          <button class="color bg-green" type="button"></button>
-          <button class="color bg-blue" type="button"></button>
-          <button class="color bg-violet" type="button"></button>
-        </nav> -->
-        <!-- <nav>
-          <p class="grey">Filter by size</p>
-          <button class="size" type="button">XS</button>
-          <button class="size-active" type="button">S</button>
-          <button class="size" type="button">M</button>
-          <button class="size" type="button">L</button>
-        </nav> -->
-      </div>
-
-      <!-- SHOP -->
-      <div class="shop-listing">
-        <!-- sec1 -->
-        <section class="listing-sec1 flex-container justify-content-between">
-          <h2>Shop</h2>
-          <div class="">
-            <!-- <p class="grey">Showing 1-12 of 24 results</p> -->
-            <form>
-              <select class="sort" name="sort">
-                <option value="0">---Sort---</option>
-                <option value="1">Hightest to lowest price</option>
-                <option value="2">Lowest to hightest price</option>
-                <option value="3">Name A-Z</option>
-                <option value="4">Name Z-A</option>
-              </select>
-            </form>
-          </div>
-        </section>
-
-        <!-- sec2 -->
-        <section class="products">
-          <div class="flex-container flex-wrap shop-item"></div>
-        </section>
-
-        <!-- PAGE -->
-        <!-- <nav class="middle listing-page">
-          <button class="size page-active" type="button">1</button>
-          <button class="size" type="button">2</button>
-          <button class="size" type="button">
-            <img src="img/arrow-page.svg" alt="next" />
-          </button>
-        </nav> -->
+    <main class="cartPage">
+      <h2>Cart</h2>
+      <div id="cart" class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Image</th>
+              <th>Quantity</th>
+              <th>Unit price</th>
+              <th>Amount</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div id="total"></div>
       </div>
     </main>
 
@@ -180,7 +121,8 @@
 
     <script src="js/main.js"></script>
     <script>
-      loadData();
+      showCart();
+      showCartTotal();
     </script>
   </body>
 </html>

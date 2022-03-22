@@ -40,8 +40,8 @@
           <li><a href="login.html">Login</a></li>
           <li>
             <div class="cart">
-              <a href="#"><img src="img/giohang.svg" alt="Cart" /></a>
-              <p>No item yet</p>
+              <a href="cart.html"><img src="img/giohang.svg" alt="Cart" /></a>
+              <p id="cart-qty">No item yet</p>
             </div>
           </li>
         </ul>
@@ -51,8 +51,8 @@
     <!-- main -->
     <main class="main-not-index">
       <!-- sec1 -->
-      <section class="flex-container container detail-sec1">
-        <div class="flex-container-column">
+      <section id="itemInfo" class="flex-container container detail-sec1">
+        <!-- <div class="flex-container-column">
           <img
             class="thumbnail-unselect"
             src="img/detail0.jpg"
@@ -69,10 +69,10 @@
             alt="thumbnail"
           />
           <img class="thumbnail" src="img/detail3.jpg" alt="thumbnail" />
+        </div> -->
+        <!-- <div>
+          <img src="img/detail-sec1.jpg" alt="Julia" />
         </div>
-
-        <img src="img/detail-sec1.jpg" alt="Julia" />
-
         <div class="flex-container flex-wrap align-content-between">
           <div class="w-100">
             <nav class="path">
@@ -82,14 +82,12 @@
             </nav>
             <h2>Julia</h2>
             <p>$249.00</p>
-
             <div class="flex-container">
               <p class="grey">Color</p>
               <button class="color bg-black" type="button"></button>
               <button class="color bg-grey" type="button"></button>
               <button class="color bg-red color-active" type="button"></button>
             </div>
-
             <div class="flex-container">
               <p class="grey">Size</p>
               <button class="size" type="button">XS</button>
@@ -97,7 +95,6 @@
               <button class="size" type="button">M</button>
               <button class="size" type="button">L</button>
             </div>
-
             <div>
               <input type="number" name="soluong" min="1" />
               <button
@@ -107,17 +104,11 @@
               >
                 Add to Cart <img src="img/shopnow.svg" alt="Shop" />
               </button>
-              <button class="like-item" type="button">
-                <img src="img/like-item.svg" alt="like" />
-              </button>
             </div>
-
-            <p class="grey">SKU: 86423-AB</p>
             <p class="grey">
               Category: <span style="color: #eb5757">Jacket</span>
             </p>
           </div>
-
           <div class="w-100 flex-container">
             <p class="grey">Share</p>
             <a href="#"><img src="img/fb.svg" alt="share" /></a>
@@ -125,7 +116,7 @@
             <a href="#"><img src="img/share3.svg" alt="share" /></a>
             <a href="#"><img src="img/share4.svg" alt="share" /></a>
           </div>
-        </div>
+        </div> -->
       </section>
 
       <!-- sec2 -->
@@ -133,32 +124,20 @@
         <div
           class="flex-container justify-content-center description-menu text-center"
         >
-          <p>Description</p>
-          <p class="grey">Additional information</p>
-          <p class="grey">Reviews (1)</p>
+          <p id="desClick" onclick="renderDes()">Description</p>
+          <p id="ratingClick" onclick="renderRating()" class="grey">Rating</p>
         </div>
-        <div>
-          <p class="grey">CONTENT AND CARE</p>
-          <ul class="grey-list">
-            <li>Nylon, Metallic, Spandex</li>
-            <li>Imported</li>
-            <li>Dry Flat</li>
-          </ul>
-          <p class="grey">DETAILS & FIT</p>
-          <ul class="red-list">
-            <li>Length: 32"</li>
-            <li>Measured in size Small</li>
-          </ul>
-          <p>Red modeled on size Small.</p>
-          <p>Model’s profile: height 5'7", bust 32", waist 25”</p>
-        </div>
+        <div id="description"></div>
       </section>
 
       <!-- sec3 -->
       <section class="container detail-sec3">
         <h3>Related Products</h3>
-        <div class="flex-container products flex-wrap detail-products">
-          <article class="product">
+        <div
+          id="related"
+          class="flex-container products flex-wrap detail-products justify-content-between"
+        >
+          <!-- <article class="product">
             <a href="#">
               <img src="img/detail-sec3-1.jpg" alt="elly" />
               <p>
@@ -168,40 +147,7 @@
             <button type="button" onclick="alert('Added to Cart')">
               Add to Cart
             </button>
-          </article>
-          <article class="product">
-            <a href="#">
-              <img src="img/detail-sec3-2.jpg" alt="elly" />
-              <p>
-                <b>Elly</b> <br />$99.000 <span class="price">$119.00</span>
-              </p>
-            </a>
-            <button type="button" onclick="alert('Added to Cart')">
-              Add to Cart
-            </button>
-          </article>
-          <article class="product">
-            <a href="#">
-              <img src="img/detail-sec3-3.jpg" alt="elly" />
-              <p>
-                <b>Elly</b> <br />$99.000 <span class="price">$119.00</span>
-              </p>
-            </a>
-            <button type="button" onclick="alert('Added to Cart')">
-              Add to Cart
-            </button>
-          </article>
-          <article class="product">
-            <a href="#">
-              <img src="img/detail-sec3-4.jpg" alt="elly" />
-              <p>
-                <b>Elly</b> <br />$99.000 <span class="price">$119.00</span>
-              </p>
-            </a>
-            <button type="button" onclick="alert('Added to Cart')">
-              Add to Cart
-            </button>
-          </article>
+          </article> -->
         </div>
       </section>
     </main>
@@ -250,5 +196,12 @@
         <p>Copyright © 2020 Nordic Coder. All rights reserved.</p>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+      productList = getProductList();
+      renderDetail();
+      renderDes();
+    </script>
   </body>
 </html>
