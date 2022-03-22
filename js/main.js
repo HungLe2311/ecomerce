@@ -3,7 +3,7 @@ let currentProducts = [];
 function loadData() {
   //hiện loading
   document.querySelector(".shop-item").innerHTML =
-    '<img src="../img/loading.png!c1024wm0" alt="loading">;';
+    '<img src="../img/loading.gif" alt="loading">';
   //lấy dữ liệu API
   fetch("https://fakestoreapi.com/products")
     .then((res) => res.json())
